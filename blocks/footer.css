@@ -10,7 +10,7 @@
 }
 
 .footer__copywrite {
-  opacity: 0.6;
+  opacity: 0.8;
   margin: 0;
   transition: opacity 0.2s;
 }
@@ -22,11 +22,24 @@
 .footer__link-github {
   text-decoration: none;
   color: #473a51;
-  opacity: 0.6;
+  opacity: 0.8;
   margin: 0;
   transition: opacity 0.2s;
 }
 
 .footer__link-github:hover {
   opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    margin: 0 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    margin: 0 auto;
+    flex-direction: column;
+  }
 }
