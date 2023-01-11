@@ -3,8 +3,6 @@
   justify-content: space-between;
   align-items: center;
   margin: 40px auto 0 auto;
-  font-family: 'Josefin Sans', Arial, sans-serif;
-  font-style: normal;
   font-size: 1.3rem;
   color: #473a51;
   border-top: 1px solid rgba(84, 84, 84, 0.7);
@@ -13,11 +11,12 @@
 .footer__copywrite {
   opacity: 0.8;
   margin: 0;
-  transition: opacity 0.2s;
+  transition: color 0.2s, opacity 0.2s;
 }
 
 .footer__copywrite:hover {
   opacity: 1;
+  color: #564663;
 }
 
 .footer__link-github {
@@ -25,11 +24,12 @@
   color: #473a51;
   opacity: 0.8;
   margin: 0;
-  transition: opacity 0.2s;
+  transition: color 0.2s, opacity 0.2s;
 }
 
 .footer__link-github:hover {
   opacity: 1;
+  color: #564663;
 }
 
 @media screen and (max-width: 768px) {
