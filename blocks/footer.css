@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
+  margin: 40px auto 0 auto;
   font-family: 'Josefin Sans', Arial, sans-serif;
   font-style: normal;
   font-size: 1.3rem;
@@ -33,10 +33,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .footer {
-    margin: 0 auto;
-  }
-
   .footer__copywrite {
     margin-left: 20px;
   }
@@ -48,7 +44,6 @@
 
 @media screen and (max-width: 480px) {
   .footer {
-    margin: 0 auto;
     flex-direction: column;
     padding-top: 20px;
   }
