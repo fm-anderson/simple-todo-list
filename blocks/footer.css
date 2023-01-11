@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  font-family: 'Josefin Sans', Arial, sans-serif;
+  font-style: normal;
+  font-size: 1.3rem;
+  color: #473a51;
+}
+
+.footer__copywrite {
+  opacity: 0.6;
+  margin: 0;
+  transition: opacity 0.2s;
+}
+
+.footer__copywrite:hover {
+  opacity: 1;
+}
+
+.footer__link-github {
+  text-decoration: none;
+  color: #473a51;
+  opacity: 0.6;
+  margin: 0;
+  transition: opacity 0.2s;
+}
+
+.footer__link-github:hover {
+  opacity: 1;
+}
