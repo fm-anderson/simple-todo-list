@@ -4,7 +4,30 @@
   border-bottom: 1px solid rgba(84, 84, 84, 0.7);
 }
 
+.header__container-left {
+  display: flex;
+  align-items: center;
+}
+
 .header__title {
   align-self: start;
-  padding-bottom: 20px;
+  color: #473a51;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.header__logo {
+  width: 30px;
+  height: auto;
+  filter: invert(3%) sepia(91%) saturate(537%) hue-rotate(200deg)
+    brightness(29%) contrast(89%);
+}
+
+@media screen and (max-width: 768px) {
+  .header__container-left {
+    margin: 0 auto;
+    justify-content: center;
+  }
 }
