@@ -7,6 +7,7 @@
   font-style: normal;
   font-size: 1.3rem;
   color: #473a51;
+  border-top: 1px solid rgba(84, 84, 84, 0.7);
 }
 
 .footer__copywrite {
@@ -33,7 +34,15 @@
 
 @media screen and (max-width: 768px) {
   .footer {
-    margin: 0 20px;
+    margin: 0 auto;
+  }
+
+  .footer__copywrite {
+    margin-left: 20px;
+  }
+
+  .footer__link {
+    margin-right: 20px;
   }
 }
 
@@ -41,5 +50,14 @@
   .footer {
     margin: 0 auto;
     flex-direction: column;
+    padding-top: 20px;
+  }
+
+  .footer__copywrite {
+    margin-left: 0;
+  }
+
+  .footer__link {
+    margin-right: 0;
   }
 }
