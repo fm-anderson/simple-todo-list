@@ -1,0 +1,16 @@
+.action__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 480px;
+  height: 3rem;
+  margin: 0 auto;
+  background-color: rgba(240, 248, 255, 0.1);
+}
+
+.action__all,
+.action__active,
+.action__completed,
+.action__clear {
+  all: unset;
+}

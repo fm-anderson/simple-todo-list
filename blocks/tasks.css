@@ -1,7 +1,7 @@
 .tasks {
   display: flex;
-  justify-content: space-between;
-  max-width: 50%;
+  margin: 0 auto;
+  width: 480px;
   margin: 0 auto;
 }
 
@@ -11,10 +11,23 @@
 }
 
 .tasks__container {
-  padding: 0.8rem 9rem 0.6rem 0.8rem;
+  display: flex;
+  width: 480px;
+  height: 3rem;
   background-color: transparent;
   background-color: rgba(240, 248, 255, 0.1);
   color: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+  margin: 0 auto;
+}
+
+.tasks__checkbox {
+  width: 20px;
+  height: auto;
+  margin-left: 10px;
+  margin-right: 3rem;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(32%) saturate(86%)
+    hue-rotate(327deg) brightness(109%) contrast(85%);
 }
 
 .tasks__checkbox-checked {
@@ -24,9 +37,35 @@
     hue-rotate(96deg) brightness(90%) contrast(90%);
 }
 
-.tasks__checkbox-unchecked {
-  width: 20px;
-  height: auto;
-  filter: brightness(0) saturate(100%) invert(100%) sepia(32%) saturate(86%)
-    hue-rotate(327deg) brightness(109%) contrast(85%);
+.tasks__title {
+  text-overflow: ellipsis;
+}
+
+.tasks__delete {
+  justify-content: flex-end;
+  all: unset;
+  background-color: transparent;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+  font-size: 1.8rem;
+  font-weight: 200;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.tasks__delete:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .tasks__container {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tasks__container {
+    max-width: 90%;
+  }
 }
