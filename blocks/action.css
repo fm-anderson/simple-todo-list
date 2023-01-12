@@ -12,6 +12,7 @@
   font-weight: 200;
   margin-left: 10px;
   opacity: 0.6;
+  line-height: 0;
 }
 
 .action__clear {
@@ -21,6 +22,7 @@
   opacity: 0.6;
   transition: opacity 0.2s, text-decoration 0.2s;
   font-weight: 200;
+  line-height: 0;
 }
 
 .action__clear:hover {

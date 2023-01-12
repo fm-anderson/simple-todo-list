@@ -24,12 +24,13 @@
   color: #473a51;
   opacity: 0.8;
   margin: 0;
-  transition: color 0.2s, opacity 0.2s;
+  transition: color 0.2s, opacity 0.2s, text-decoration 0.2s;
 }
 
 .footer__link-github:hover {
   opacity: 1;
   color: #564663;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 768px) {
