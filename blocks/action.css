@@ -8,9 +8,35 @@
   background-color: rgba(240, 248, 255, 0.1);
 }
 
-.action__all,
-.action__active,
-.action__completed,
+.action__count {
+  font-weight: 200;
+  margin-left: 10px;
+  opacity: 0.6;
+}
+
 .action__clear {
   all: unset;
+  margin-right: 10px;
+  background-color: transparent;
+  opacity: 0.6;
+  transition: opacity 0.2s, text-decoration 0.2s;
+  font-weight: 200;
+}
+
+.action__clear:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .action__container {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .action__container {
+    max-width: 90%;
+  }
 }
