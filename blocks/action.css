@@ -18,17 +18,9 @@
 .description__completed {
   all: unset;
   margin-right: 10px;
-  background-color: transparent;
   opacity: 0.6;
-  transition: opacity 0.2s, text-decoration 0.2s;
   font-weight: 200;
   line-height: 0;
-}
-
-.description__completed:hover {
-  opacity: 0.8;
-  cursor: pointer;
-  text-decoration: underline;
 }
 
 @media screen and (max-width: 768px) {

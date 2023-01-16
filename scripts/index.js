@@ -17,11 +17,13 @@ function handleNewTask() {
   tasksArray.push(taskInput.value);
   taskInput.value = '';
   updateCount();
+  updateCompleted();
 }
 
 function handleCompleteTask(e) {
   e.target.classList.toggle('tasks__checkbox-checked');
   e.target.nextElementSibling.classList.toggle('tasks__checkbox-checked');
+  updateCompleted();
 }
 
 function handleDeleteTask(e) {
@@ -31,6 +33,7 @@ function handleDeleteTask(e) {
   }
   updateCount();
   e.path[2].remove();
+  updateCompleted();
 }
 
 function updateCount() {
@@ -43,6 +46,22 @@ function updateCount() {
       break;
     default:
       tasksCount.textContent = `${tasksArray.length} items left`;
+  }
+}
+
+function updateCompleted() {
+  let completedCount = document.querySelectorAll('.tasks__checkbox-checked');
+  let count = completedCount.length / 2;
+
+  switch (count) {
+    case 0:
+      tasksCompleted.textContent = '0 tasks completed';
+      break;
+    case 1:
+      tasksCompleted.textContent = `1 task completed`;
+      break;
+    default:
+      tasksCompleted.textContent = `${count} tasks completed`;
   }
 }
 
