@@ -1,10 +1,9 @@
 const tasksArray = [];
 const tasksList = document.querySelector('.tasks__list');
-const tasksCount = document.querySelector('.action__count');
+const tasksCount = document.querySelector('.description__count');
+const tasksCompleted = document.querySelector('.description__completed');
 const taskForm = document.querySelector('#taskForm');
 const taskInput = document.querySelector('#taskInput');
-
-console.log(tasksCount.textContent);
 
 taskForm.addEventListener('submit', handleSubmit);
 

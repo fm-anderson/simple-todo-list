@@ -1,4 +1,4 @@
-.action__container {
+.description__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,14 +8,14 @@
   background-color: rgba(240, 248, 255, 0.1);
 }
 
-.action__count {
+.description__count {
   font-weight: 200;
   margin-left: 10px;
   opacity: 0.6;
   line-height: 0;
 }
 
-.action__clear {
+.description__completed {
   all: unset;
   margin-right: 10px;
   background-color: transparent;
@@ -25,20 +25,20 @@
   line-height: 0;
 }
 
-.action__clear:hover {
+.description__completed:hover {
   opacity: 0.8;
   cursor: pointer;
   text-decoration: underline;
 }
 
 @media screen and (max-width: 768px) {
-  .action__container {
+  .description__container {
     max-width: 70%;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .action__container {
+  .description__container {
     max-width: 90%;
   }
 }
