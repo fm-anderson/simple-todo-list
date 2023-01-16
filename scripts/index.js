@@ -1,7 +1,10 @@
 const tasksArray = [];
 const tasksList = document.querySelector('.tasks__list');
+const tasksCount = document.querySelector('.action__count');
 const taskForm = document.querySelector('#taskForm');
 const taskInput = document.querySelector('#taskInput');
+
+console.log(tasksCount.textContent);
 
 taskForm.addEventListener('submit', handleSubmit);
 
@@ -14,12 +17,12 @@ function handleSubmit(e) {
 function handleNewTask() {
   tasksArray.push(taskInput.value);
   taskInput.value = '';
+  updateCount();
 }
 
 function handleCompleteTask(e) {
   e.target.classList.toggle('tasks__checkbox-checked');
   e.target.nextElementSibling.classList.toggle('tasks__checkbox-checked');
-  console.log(e);
 }
 
 function handleDeleteTask(e) {
@@ -27,7 +30,21 @@ function handleDeleteTask(e) {
   if (index > -1) {
     tasksArray.splice(index, 1);
   }
+  updateCount();
   e.path[2].remove();
+}
+
+function updateCount() {
+  switch (tasksArray.length) {
+    case 0:
+      tasksCount.textContent = `No items`;
+      break;
+    case 1:
+      tasksCount.textContent = `1 item left`;
+      break;
+    default:
+      tasksCount.textContent = `${tasksArray.length} items left`;
+  }
 }
 
 function addElement(task) {
@@ -68,3 +85,4 @@ function delegateEvent(elementClass, action) {
 
 delegateEvent('.tasks__checkbox', handleCompleteTask);
 delegateEvent('.tasks__delete', handleDeleteTask);
+updateCount();
