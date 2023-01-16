@@ -31,6 +31,7 @@
 }
 
 .tasks__checkbox-checked {
+  text-decoration: line-through;
   filter: brightness(0) saturate(100%) invert(47%) sepia(58%) saturate(465%)
     hue-rotate(96deg) brightness(90%) contrast(90%);
 }
@@ -40,12 +41,6 @@
   font-weight: 400;
   letter-spacing: 0.4px;
   opacity: 0.6;
-}
-
-.tasks__title-checked {
-  text-decoration: line-through;
-  opacity: 0.6;
-  color: #40945b;
 }
 
 .tasks__delete {
